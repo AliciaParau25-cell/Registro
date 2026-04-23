@@ -1,12 +1,19 @@
 @font-face {
     font-family: 'LeagueGothic';
-    src: url('../fonts/LeagueGothic.otf'); 
+    src: url('../fonts/League_Gothic-webfont.woff') format('woff'),
+         url('../fonts/League_Gothic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'AcknowledgementMedium';
-    src: url('../fonts/Acknowledgement.otf');
+    src: url('../fonts/Acknowledgement-webfont.woff') format('woff'),
+         url('../fonts/Acknowledgement-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
 
 * {
     margin: 0;
@@ -26,25 +33,31 @@ form {
     width: 710px;
     text-align: center;
     padding: 20px;
-    
-    background: rgba(0,0,0,0.2) url('../imgs-registro/bg-form.png') no-repeat bottom center;
+
+    background: rgba(0,0,0,0.2) url('../imgs/bg-form.png') no-repeat bottom center;
 }
 
-form ul { list-style-type: none; }
-form ul li { margin-bottom: 15px; }
+form ul { 
+    list-style-type: none; 
+}
+
+form ul li { 
+    margin-bottom: 15px; 
+}
 
 form h1 {
     font-family: 'AcknowledgementMedium', sans-serif;
     font-size: 2.5em;
     padding: 40px 0;
-    background-image: url('../imgs-registro/bg-formtitle-left.png'), url('../imgs-registro/bg-formtitle-right.png');
+    background-image: url('../imgs-registro/bg-formtitle-left.png'), 
+                      url('../imgs-registro/bg-formtitle-right.png');
     background-position: left center, right center;
     background-repeat: no-repeat;
-    background-size: 100px auto;
+    background-size: 100px auto; 
 }
 
 label {
-    font-family: 'LeagueGothic', Tahoma, sans-serif;
+    font-family: 'LeagueGothic', sans-serif;
     display: block;
     margin: auto;
     text-align: center;
@@ -53,7 +66,7 @@ label {
 }
 
 input { 
-    
+
     color: #282828;
     background-color: transparent;
     border: dotted #484848;    
@@ -77,9 +90,11 @@ input:focus:valid {
     background: url('../imgs-registro/valid.png') no-repeat right center;
 }
 
+
 input:focus:invalid {
     background: url('../imgs-registro/invalid.png') no-repeat right center;
 }
+
 
 input[type="checkbox"] { 
     vertical-align: bottom; 
@@ -88,11 +103,19 @@ input[type="checkbox"] {
     background: none !important;
 }
 
-input[type="range"] { border: none; }
+input[type="range"] { 
+    border: none; 
+}
 
-label[for=cantidad], #cantidad { display: inline; }
-#cantidad { width: 40px; display: inline; padding: 0; }
+label[for="cantidad"], #cantidad { 
+    display: inline; 
+}
 
+#cantidad { 
+    width: 40px; 
+    display: inline; 
+    padding: 0; 
+}
 
 #registro-submit {
     cursor: pointer;
@@ -111,4 +134,6 @@ label[for=cantidad], #cantidad { display: inline; }
     width: auto;
 }
 
-#registro-submit:hover { opacity: 1; }
+#registro-submit:hover { 
+    opacity: 1; 
+}
